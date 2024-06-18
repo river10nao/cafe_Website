@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Jquery -->
+  <script src="./assets/js/jquery-3.7.1.min.js" defer></script>
+  <!-- invewのjs -->
+  <script src="./assets/js/jquery.inview.min.js" defer></script>
+  <!-- slickのjs -->
+  <script src="assets/lib/slick/slick.min.js" defer></script>
+  <!-- js -->
+  <script src="./assets/js/script.js" defer></script>
+  <!-- invewで入力する用のjs -->
+  <script src="./assets/js/forinvew.js" defer></script>
+  <!-- リセット -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif+JP&family=Yeseva+One&display=swap" rel="stylesheet">
+  <!-- slickのCSS -->
+  <link rel="stylesheet" href="./assets/lib/slick/slick.css">
+  <link rel="stylesheet" href="./assets/lib/slick/slick-theme.css">
+  <!-- スタイルCSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <title>Document</title>
+</head>
+<body class="top-body">
+  <header class="wrap header">
+    <div class="inner">
+      <h1><img src="./assets/images/good day coffee.png" alt="Good Day Coffee"></h1>
+      <nav class="fixed">
+        <ul class="link-list">
+          <li>
+            <a href="../"><span>Top</span></a>
+          </li>
+          <li>
+            <a href="./coffee/"><span>Coffee</span></a>
+          </li>
+          <li>
+            <a href="../barista/"><span>Barista</span></a>
+          </li>
+          <li>
+            <a href="./store/"><span>Store</span></a>
+          </li>
+          <li>
+            <a href="../menu/"><span>Menu</span></a>
+          </li>
+          <li>
+            <a href="./contact/"><span>Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+      <!--------- slick ---------->
+      <div class="wrap">
+        <div class="slick01 inner">
+          <img src="./assets/images/coffee-shop-393954_1280.jpg" alt="コーヒーショップ店内">
+          <img src="./assets/images/coffee-924948_1280 1.webp" alt="">
+          <img src="./assets/images/vintage-decor-6875829_1280 1.webp" alt="">
+        </div>
+      </div>
+  <main>
+    <section class="wrap">
+      <div class="main-copy inview-cont">
+        <h2 class="noto">コーヒーで繋がる、豊かな時間</h2>
+        <p class="noto">一杯のコーヒーに、特別な意味を。<br>スペシャリティーコーヒーが織りなす、華やかな味わいと香り。<br>
+          毎日を彩る小さな贅沢を、お楽しみください。<br>心地よい時の流れを感じながら、究極のコーヒー体験をお届けします。</p>
+      </div>
+    </section>
+    <section class="wrap">
+      <div class="parallax main-cont inner">
+        <div class="main-cont-item inview-cont">
+          <img src="./assets/images/coffee-839169_1280.jpg" alt="カップに入ったコーヒー豆">
+          <div class="main-cont-text">
+            <h3 class="Yeseva">SPECIALTY COFFEE</h3>
+            <p class="font-14">スペシャルティコーヒー専門店</p>
+            <p class="noto">契約農園から、厳選した最高品質のコーヒー豆を直接買い付けしております。<br>
+              各地の気候と土壌が生み出す豊かな風味、生産者の情熱と技術が結集。<br>美味しさだけでなく、生産背景まで感じられるコーヒー体験を。</p>
+              <a href="./coffee/">
+                <img src="assets/images/Frame 3botan.png" alt="moreボタン">
+              </a>
+          </div>
+        </div>
+        <div class="main-cont-item inview-cont">
+          <div class="main-cont-text">
+            <h3 class="Yeseva">Barista</h3>
+            <p class="font-14">バリスタ</p>
+            <p class="noto">バリスタチャンピオンシップインジャパン2021チャンピオン<br>
+              豊富な知識と経験を持ち、お客様の好みやニーズに合わせて最高のコーヒーを提供します。</p>
+              <a href="./barista/">
+                <img src="assets/images/Frame 3botan.png" alt="moreボタン">
+              </a>
+          </div>
+          <img src="./assets/images/coffee-4063911_1280.jpg" alt="バリスタがコーヒーを注いでいる">
+        </div>
+      </div>
+    </section>  
+      <div class="wrap">
+        <section class="shop-list inner inview-cont">
+          <div class="shop-list-text">
+            <h3 class="Yeseva">Store</h3>
+            <p class="font-14">ストア</p>
+            <div>
+              <p class="noto">コーヒーの香りとともに、お客様の落ち着ける空間を提供しております。</p>
+            </div>
+          </div>
+          <div class="shop-link">
+            <a href="./store/index.html#kobe">
+              <img src="./assets/images/seoul-7106196_1280.jpg" alt="神戸店店内">
+              <div class="shop-place">Kobe</div>
+            </a>
+            <a href="./store/index.html#osaka">
+              <img src="./assets/images/mihai-moisa-Djtc1T38-GY-unsplash.jpg" alt="大阪店店内">
+              <div class="shop-place">Osaka</div>
+            </a>
+            <a href="./store/index.html#kyoto">
+              <img src="./assets/images/mintosko-XmnyGzxaVds-unsplash.jpg" alt="京都店店内">
+              <div class="shop-place">Kyoto</div>
+            </a>
+          </div>
+        </section>
+      </div>
+    <section class="wrap shop-info">
+      <div class="shop-sns">
+        <h3 class="Yeseva">Follow us</h3>
+        <p class="font-14">フォローよろしくお願いします</p>
+        <div class="sns-icon">
+          <a href="">
+            <img src="./assets/images/Facebook_Logo_Secondary 1.png" alt="faceBookロゴ">
+          </a>
+          <a href="">
+            <img src="./assets/images/Instagram_Glyph_White 1 (1).png" alt="インスタロゴ">
+          </a>
+          <a href="">
+            <img src="./assets/images/logo-white 1 (1).png" alt="Xロゴ">
+          </a>
+        </div>
+      </div>
+      <div class="shop-con">
+        <h3 class="Yeseva">Contact</h3>
+        <p class="font-14">お問合せ</p>
+        <a href="./contact/"><p class="frame">メールホーム</p></a>
+        <p class="frame">
+          <a href="tel:078-123-7890">078-123-7890</a>
+        </p>
+        <p class="font-14">(受付： 11:00〜21:00)</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="inner">
+      <div class="footer-about">
+        <a href=""><img src="./assets/images/cafe_banner.jpg" alt="オンラインショップのバナー"></a>
+        <div class="footer-cont">
+          <ul>
+            <li><a href="./contact/">お問い合わせ</a></li>
+            <li><a href="./contact/index.html#personal">プライバシー</a></li>
+            <li>会社概要</li>
+          </ul>
+          <div class="sns-icon">
+            <a href="">
+              <img src="./assets/images/Facebook_Logo_Secondary 1.png" alt="faceBookロゴ">
+            </a>
+            <a href="">
+              <img src="./assets/images/Instagram_Glyph_White 1 (1).png" alt="インスタロゴ">
+            </a>
+            <a href="">
+              <img src="./assets/images/logo-white 1 (1).png" alt="Xロゴ">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Jquery -->
+  <script src="../assets/js/jquery-3.7.1.min.js" defer></script>
+  <!-- invewのjs -->
+  <script src="../assets/js/jquery.inview.min.js" defer></script>
+  <!-- slickのjs -->
+  <script src="../assets/lib/slick/slick.min.js" defer></script>
+  <!-- js -->
+  <script src="../assets/js/script.js" defer></script>
+  <!-- swiperのCDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- swiper.js -->
+  <script src="../assets/js/swiper.js" defer></script>
+  <!-- invewで入力する用のjs -->
+  <script src="../assets/js/forinvew.js" defer></script>
+  <!-- reset.css -->
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif+JP&family=Yeseva+One&display=swap" rel="stylesheet">
+  <!-- slickのCSS -->
+  <link rel="stylesheet" href="../assets/lib/slick/slick.css">
+  <link rel="stylesheet" href="../assets/lib/slick/slick-theme.css">
+  <!-- style.css -->
+  <link rel="stylesheet" href="../assets/css/style.css">  
+  <title>Document</title>
+</head>  
+<body>
+  <header class="header">
+    <div class="inner">
+      <h1><img src="../assets/images/good day coffee.png" alt="Good Day Coffee"></h1>
+      <nav class="fixed">
+        <ul class="link-list">
+          <li>
+            <a href="../"><span>Top</span></a>
+          </li>
+          <li>
+            <a href="../coffee/"><span>Coffee</span></a>
+          </li>
+          <li>
+            <a href="../barista/"><span>Barista</span></a>
+          </li>
+          <li>
+            <a href="../store/"><span>Store</span></a>
+          </li>
+          <li>
+            <a href="../menu/"><span>Menu</span></a>
+          </li>
+          <li>
+            <a href="../contact/"><span>Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="barista-top">
+      <img src="../assets/images/barista.png" alt="バリスタの写真">
+    </section>
+    <section class="main-cont inner inview-cont">
+      <div class="main-cont-text">
+        <h3 class="Yeseva">Barista</h3>
+        <p class="font-14">バリスタ</p>
+        <p class="noto barista-text">豊富な知識と経験を持ち、お客様の好みやニーズに合わせて最高のコーヒーを提供します。</p>
+      </div>
+      <div class="tokuda inview-cont">
+        <div class="tokuda-pro">
+          <img src="../assets/images/徳田健太郎.png" alt="徳田健太郎">
+          <div class="tokuda-text">
+            <p class="font-24">Chief Barista</p>
+            <p class="font-14">バリスタチャンピオンシップインジャパン2021チャンピオン</p>
+            <p class="font-32">徳田　健太郎</p>
+            <p class="font-14">Kentaro  Tokuda</p>
+          </div>
+        </div>
+        <div class="tokuda-about">
+          <p>
+            Good Day Coffeeへようこそ。<br>
+            私はコーヒーを淹れることが大好きで、毎日新しい味わいを発見することに喜びを感じています。<br>
+            私の目標は、お客様が一杯のコーヒーを通じてリラックスし、喜びを感じてもらうことです。<br>
+            丁寧なサービスと美味しいコーヒーを提供することに誇りを持っています。<br>
+            お好みのコーヒースタイルがあれば、お気軽にお申し付けください。<br>
+            笑顔でお待ちしています。
+          </p>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="../assets/images/barista-coffee1.png" alt="バリスタの入れたコーヒー">
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/barista-coffee2.png" alt="バリスタの入れたコーヒー">
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/barista-coffee3.png" alt="バリスタの入れたコーヒー">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="inner">
+      <div class="footer-about">
+        <a href=""><img src="../assets/images/cafe_banner.jpg" alt="オンラインショップのバナー"></a>
+        <div class="footer-cont">
+          <ul>
+            <li><a href="../contact/">お問い合わせ</a></li>
+            <li><a href="../contact/index.html#personal">プライバシー</a></li>
+            <li>会社概要</li>
+          </ul>
+          <div class="sns-icon">
+            <a href="">
+              <img src="../assets/images/Facebook_Logo_Secondary 1.png" alt="faceBookロゴ">
+            </a>
+            <a href="">
+              <img src="../assets/images/Instagram_Glyph_White 1 (1).png" alt="インスタロゴ">
+            </a>
+            <a href="">
+              <img src="../assets/images/logo-white 1 (1).png" alt="Xロゴ">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

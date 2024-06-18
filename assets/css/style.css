@@ -1,0 +1,534 @@
+@charset "utf-8";
+
+.inner{
+  max-width: 1200px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body{
+  color: #333;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.noto{
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header{
+  width: 100%
+}
+h1{
+  text-align: center;
+  border-bottom: 20px double #625F5E;
+  padding-top: 10px;
+}
+h1 img{
+  height: 75px;
+  width: 300px;
+}
+.fixed{
+  /* position: fixed;
+  width: 100vw; */
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10000000;
+  /* background-color: rgba(255, 255, 255, 0.6); */
+  background-color: rgba(255, 255, 255, 0.615);
+}
+.nav-fix .fixed{
+  position: fixed;
+  width: 100vw;
+}
+.link-list{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.link-list li a{
+  display: block;
+}
+.link-list li a span{
+  display: block;
+  padding: 10px;
+}
+.main-copy{
+  text-align: center;
+  padding: 150px;
+}
+.main-copy h2{
+  font-size: calc( 36rem / 16 );
+  padding: 50px;
+  text-shadow: 1px 2px 3px #808080;
+}
+.main-copy p{
+  font-size: calc( 24rem / 16 );
+}
+.main-cont-item{
+  display: flex;
+  padding: 30px 30px 150px 30px;
+  gap: 50px;
+}
+.main-cont-item img{
+  width: 610px;
+  height: 610px;
+  object-fit: cover;
+}
+h3{
+  font-size: calc( 40rem / 16 );
+}
+.main-cont-item p{
+  font-size: calc( 14rem/ 16 );
+}
+.main-cont-text img{
+  width: 155px;
+  height: 90px;
+  margin-top: 124px;
+}
+.main-cont-text{
+  text-align: center;
+}
+.main-cont-text h3{
+  margin-top: 98px;
+}
+.font-14{
+  font-size: calc( 14rem / 16 );
+}
+.main-cont-text .font-14{
+  margin-bottom: 67px;
+}
+.shop-list-text{
+  text-align: center;
+  padding-top: 100px;
+}
+.shop-list-text div p{
+  margin: 30px 0 30px;
+}
+/* ==========パララックス======== */
+.parallax{
+  margin-bottom: 480px;
+}
+.parallax::after{
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/cafe内装1.png) no-repeat center/cover;
+  z-index: -1;
+}
+.wrap{
+  background-color: #fff;
+}
+/* ======↓↓３つ並んだショップリンク===== */
+.shop-link{
+  display: flex;
+}
+.shop-link a{
+  display: block;
+  position: relative;
+  flex-basis: calc( 100% / 3 );
+}
+.shop-link img{
+  aspect-ratio: 413 / 558;
+  object-fit: cover;
+}
+.shop-place{
+  width: 70%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  background-color: rgba(255,255,255,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc( 40rem / 16 );
+}
+/* ======↑↑３つ並んだショップリンク===== */
+.shop-list{
+  padding-bottom: 240px;
+}
+.shop-info{
+  border-top: 20px double #625F5E;
+  display: flex;
+  gap: 169px;
+  padding-bottom: 240px;
+  justify-content: center;
+}
+.sns-icon{
+  display: flex;
+  gap: 30px;
+}
+.shop-sns{
+  color: #fff;
+  border-radius: 50px;
+  background-color: #674F4F;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+  padding: 50px 90px;
+  margin-top: 135px;
+}
+.shop-sns p{
+  padding-bottom: 38px;
+}
+.shop-con{
+  margin-top: 135px;
+  text-align: center;
+}
+.frame{
+  background-color: #DFD9D9;
+  padding: 20px 147px;
+  border: 1px solid #333;
+  border-radius: 50px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+}
+footer{
+  background-color: #625F5E;
+}
+.footer-about{
+  display: flex;
+  gap: 50px;
+}
+.footer-about>a{
+  width: 586px;
+  height: 196px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.footer-cont{
+  color: #fff;
+  display: flex;
+  gap: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.footer-cont li{
+  margin-bottom: 20px;
+}
+.Yeseva{
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.shop-place{
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/* ======================inview====================== */
+.inview-cont{
+  translate: 0 300px;
+  opacity: 0;
+  transition: 1s;
+}
+.inview-cont.app{
+  translate: 0 0;
+  opacity: 1;
+}
+/* ========================Coffee==================== */
+/* ビデオ */
+.key-visual{
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
+}
+.key-visual video{
+  width: 100%;
+}
+.specialty-cont h3,
+.specialty-cont p{
+  text-align: center;
+}
+.specialty-cont h3{
+  padding-top: 200px;
+}
+.specialty-cont>p{
+  margin-bottom: 100px;
+}
+.coffee-about{
+  display: flex;
+  margin-bottom: 130px;
+}
+.beans-cont{
+  background-color: rgba(103, 79, 79, 0.16);
+  margin-bottom: 150px;
+  padding-bottom: 100px;
+}
+.beans-text{
+  text-align: center;
+}
+.beans-text h3{
+  padding-top: 100px;
+}
+.beans-text .font-14{
+  margin-bottom: 100px;
+}
+.beans-text h4{
+  font-size: calc( 36rem / 16 );
+}
+.beans-text .noto{
+  margin: 50px 0 100px;
+}
+.card-img{
+  height: 250px;
+  width: 350px;
+}
+.card-text{
+  width: 342px;
+  margin-bottom: 50px;
+  padding: 10px 20px 10px;
+}
+.card-con{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* =======================Barista======================= */
+/* swiper */
+.swiper {
+  width: 500px;
+  height: 400px;
+  margin-right: 0;
+}
+.swiper-slide img{
+  object-fit: cover;
+}
+.barista-top{
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 187px;
+}
+.main-cont-text{
+  text-align: center;
+}
+.barista-text{
+  margin: 50px 0 177px;
+}
+.tokuda img{
+  width: 570px;
+  height: 376px;
+}
+.tokuda-pro{
+  display: flex;
+  margin-bottom: 65px;
+}
+.font-24{
+  font-size: calc( 24rem / 16 );
+}
+.font-32{
+  font-size: calc( 32rem / 16 );
+}
+.tokuda-text{
+  margin: 100px 75px 100px;
+  text-align: left;
+}
+.tokuda-about{
+  display: flex;
+  margin-bottom: 247px;
+}
+.tokuda-about p{
+  width: 525px;
+  height: 282px;
+  line-height: 2;
+  margin: 50px 0 50px 50px;
+}
+/* =====================store======================= */
+.store-top{
+  text-align: center;
+}
+.store-top img{
+  width: 0 auto;
+  height: 300px;
+  object-fit: cover;
+}
+.store-kobe,
+.store-osaka,
+.store-kyoto{
+  display: flex;
+  justify-content: center;
+  gap: 150px
+}
+.store-kobe img,
+.store-osaka img,
+.store-kyoto img{
+  width: 468px;
+  height: 633px;
+  margin-bottom: 50px;
+}
+.font-40{
+  font-size: 40px;
+}
+.store-about iframe{
+  margin: 58px 0;
+}
+.store-kyoto{
+  margin-bottom: 200px;
+}
+.store-about{
+  margin-top: 80px;
+}
+/* ======================menu======================= */
+/* .slick02 img{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+} */
+.menu-coffee-text img{
+  width: 100px;
+  margin: 20px 20px 50px 20px;
+}
+/* ========menu（トップ）のスライダー =======*/
+/* スライダー全体 */
+.slider-wrapper {
+  display: flex; /* スライドのグループを横並び */
+  overflow: hidden; /* はみ出たスライドを隠す */
+}
+/* スライド3枚のグループ */
+.slider {
+  animation: scroll-left 20s infinite linear .5s both;
+  display: flex; /* スライド3枚を横並び */
+}
+/* スライド */
+.slide {
+  width: calc(100vw / 3); /* 3はスライドの枚数 */
+}
+/* スライドの画像 */
+.slide img {
+  width: 100%;
+}
+/* CSSアニメーション */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.menu-coffee,
+.menu-others{
+  display: flex;
+  padding: 30px;
+  margin-bottom: 100px;
+  gap: 50px;
+  justify-content: center;
+  width: auto;
+}
+.menu-coffee-text p{
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+.menu-others-text p{
+  margin-bottom: 20px;
+  margin-right: 100px;
+}
+.menu-others-text img{
+  width: 300px;
+  margin: 20px 20px 50px 200px;
+}
+.font-20{
+  font-size: calc( 20rem / 16 );
+}
+.morning-top img{
+  width: 250px;
+  margin-bottom: 20px;
+}
+.menu-morning-flex{
+  display: flex;
+  padding: 30px;
+  margin-bottom: 100px;
+  gap: 50px;
+  justify-content: center;
+  width: auto;
+}
+.morning-top{
+  text-align: center;
+}
+.menu-morning-flex img{
+  width: 500px;
+  object-fit: cover;
+}
+.menu-morning-text p{
+  margin-bottom: 20px;
+}
+.menu-morning-text{
+  margin-top: 130px;
+}
+/* ====================contact==================== */
+.cont-top .p-1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cont-top .p-2{
+  text-align: center;
+}
+/* ↓ボタン↓ */
+a.btn-border {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+}
+a.btn-border:hover {
+  color: #fff;
+  background: #000;
+}
+/* ↑ボタン↑ */
+.cont-form .Yeseva a{
+  padding: 10px 60px;
+}
+
+.cont-form form{
+  background-color: rgba(255, 255, 255, 0.54);
+  width: 600px;
+  padding: 30px;
+  margin: 50px auto;
+}
+.form-all{
+  background-image: url(../images/bacground.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+  border: 1px solid #ccc;
+  background-color: rgba(234, 234, 234, 1);
+  width: 100%;
+  margin-top: 5px;
+  padding: 4px 8px;
+}
+.cont-form form p{
+  margin-top: 30px;
+}
+textarea{
+  padding-bottom: 150px;
+}
+#personal{
+  background-color: rgba(255, 255, 255, 0.54);
+  padding: 30px;
+  width: 900px;
+  margin: 0 auto;
+}
+.contact-body .shop-info{
+  margin-top: 100px;
+  margin-bottom: 0;
+  padding-bottom: 100px;
+}
+.contact-body .main-cont-text h3{
+  margin-top: 0;
+  padding-top: 100px;
+}
